@@ -7,3 +7,10 @@ Bypasses embed age restriction. This might be only temponary solution. If YouTub
 
 # Installation
 Install this script with [Trampermonkey](https://www.tampermonkey.net/) (or Violentmonkey etc.) extension avalaible for all modern browsers.
+
+# Install link
+Trampermonkey (and similar extensions) should automatically recognize install links: 
+
+https://raw.githubusercontent.com/mozkomor05/YT-Age-Restriction-Bypass/main/YTARB.user.js
+
+Otherwise install the script manually.
