@@ -1,5 +1,5 @@
 # YTARB -   YouTube Age Restriction Bypass
-Changing your date birth isn't enough anymore. In order to watch age-restricted videos you have to verify yourself using personal documents. Not with this script thought.
+Changing your date birth isn't enough anymore. In order to watch age-restricted videos you have to verify yourself using personal documents. Not with this script though.
 
 # Description
 
