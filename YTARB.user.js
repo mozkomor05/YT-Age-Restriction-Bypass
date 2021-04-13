@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name             YouTube Age Restriction Bypass
+// @name            YTARB - YouTube Age Restriction Bypass
 // @namespace       https://github.com/mozkomor05/YT-Age-Restriction-Bypass 
 // @version         0.0.5
 // @description     can't stop me from listening to S3RL - Hentai
