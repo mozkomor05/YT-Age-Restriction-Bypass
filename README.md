@@ -1,4 +1,4 @@
-# YTARB -   YouTube Age Restriction Bypass
+YTARB -   YouTube Age Restriction Bypass
 ==========
 
 __Looks like YouTube disabled its `get_video_info` endpoint.__ I'm not sure if the bypass still works.
