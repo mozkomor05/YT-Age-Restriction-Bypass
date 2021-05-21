@@ -16,6 +16,7 @@ In that case [youtube-dl](https://github.com/ytdl-org/youtube-dl) will be the on
 - Watch age-restricted videos without having to verify your age.
 - Watch age-restricted videos without even being logged in (unstable?).
 - Watch restriced videos in embeds (without having to open YouTube).
+- ADBlock support - watch age-restricted videos while still seeing no ads.
 
 # Installation
 Install this script with [Tampermonkey](https://www.tampermonkey.net/) (or Violentmonkey etc.) extension avalaible for all modern browsers.
