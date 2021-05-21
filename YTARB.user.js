@@ -84,6 +84,7 @@
         let bypassedInitialResponse = null;
 
         const _defineProperty = Object.defineProperty;
+        let externallyDefinedDescriptor = window.Object.getOwnPropertyDescriptor(window, "ytInitialPlayerResponse");
 
         /**
          * When YouTube video is accesed directly, YT adds `ytInitialPlayerResponse` object to the page, which contains the video 
@@ -99,8 +100,14 @@
                 catch {
                     bypassedInitialResponse = value;
                 }
+
+                if (externallyDefinedDescriptor && externallyDefinedDescriptor.set)
+                    externallyDefinedDescriptor.set(bypassedInitialResponse);
             },
             get: function () {
+                if (externallyDefinedDescriptor && externallyDefinedDescriptor.get)
+                    return externallyDefinedDescriptor.get();
+
                 return bypassedInitialResponse;
             }
         });
@@ -110,7 +117,7 @@
          */
         unsafeWindow.Object.defineProperty = function (obj, prop, descriptor) {
             if (obj === unsafeWindow && prop === "ytInitialPlayerResponse") {
-                console.info("Blocked redefining 'ytInitialPlayerResponse', sorry AdBlock :(");
+                externallyDefinedDescriptor = descriptor;
             } else {
                 _defineProperty(obj, prop, descriptor);
             }
